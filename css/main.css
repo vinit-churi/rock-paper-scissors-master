@@ -5,12 +5,6 @@
 
   /* ### Primary */
 
-  --Scissors-Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
-  --Paper-Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
-  --Rock-Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
-  --Lizard-Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
-  --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
-
   /* ### Neutral */
 
   --Dark-Text: hsl(229, 25%, 31%);
@@ -30,15 +24,17 @@
   --Weight-700: 700px;
 }
 body {
-  background-image: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 
-  /* background-color: rgb(44, 29, 208); */
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100%;
   /* font-family: var(--font-family-one); */
   font-family: var(--font-family-two);
+  background-size: 400%;
+  /* animation: bgAnimate 5s infinite alternate; */
 }
 
 /* .navbar */
@@ -51,7 +47,9 @@ div.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 50px 35px;
-  width: 60%;
+  width: 70%;
+  min-width: 350px;
+  max-width: 700px;
   /* min-width: ; */
   /* max-width: ; */
   margin-left: auto;
@@ -91,20 +89,19 @@ div.navbar {
   /* background-color: azure; */
   /* background-image: url("./images/bg-triangle.svg"); */
   /* height: 500px; */
-  width: max-content;
+  min-width: 350px;
+  max-width: 500px;
+  width: 50%;
   /* background-color: white; */
   /* background-size: contain; */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .black-triangle {
   position: relative;
-}
-
-.black-triangle {
-  width: 450px;
+  width: 100%;
 }
 
 .black-triangle img {
@@ -116,7 +113,6 @@ div.navbar {
 .scissor {
   background-color: white;
   /* background-color: transparent; */
-
   position: absolute;
   height: 200px;
   width: 200px;
@@ -131,31 +127,24 @@ div.navbar {
 }
 
 .rock {
-  top: 0;
-  /* left: -50%; */
-  left: 0;
-  border-color: aqua;
-  transform: translate(-50%, -50%);
-  /* transform: translateX(-50%); */
-  /* transform: translateY(-50%); */
-  /* transform-origin: center; */
+  top: -120px;
+  left: -120px;
+  border-color: #0396ff;
 }
 
 .paper {
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
-
-  border-color: gold;
+  top: -120px;
+  right: -120px;
+  border-color: #f8d800;
 }
 
 .scissor {
-  bottom: 0;
+  bottom: -120px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(50%);
+  border-color: #f6416c;
 }
 
 .rock img,
@@ -164,8 +153,77 @@ div.navbar {
   width: 40%;
   /* transition: all o.3s ease; */
 }
-.rock img:hover,
+/* .rock img:hover,
 .paper img:hover,
 .scissor img:hover {
-  transform: scale(1.23);
+} */
+
+.rock:hover {
+  /* animation: blueAnimation 1s ease infinite; */
+  transform: scale(1.1);
+}
+.scissor:hover {
+  /* animation: redAnimation 1s ease infinite; */
+  transform: scale(1.1);
+}
+.paper:hover {
+  /* animation: goldAnimation 1s ease infinite; */
+  /* transform: scale(1.23); */
+  transform: scale(1.1);
+}
+
+@keyframes bgAnimate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@media (max-width: 700px) {
+  .rock,
+  .paper,
+  .scissor {
+    width: 150px;
+    height: 150px;
+  }
+
+  .rock {
+    top: -87px;
+    left: -87px;
+  }
+  .paper {
+    top: -87px;
+    right: -87px;
+  }
+  .scissor {
+    bottom: -87px;
+  }
+}
+
+@media (max-width: 570px) {
+  .rps-container {
+    min-width: 270px;
+  }
+  .rock,
+  .paper,
+  .scissor {
+    width: 150px;
+    height: 150px;
+    /* border: 10px solid; */
+    /* border-width: 10px; */
+  }
+
+  .rock {
+    top: -87px;
+    left: -87px;
+  }
+  .paper {
+    top: -87px;
+    right: -87px;
+  }
+  .scissor {
+    bottom: -87px;
+  }
 }
