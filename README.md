@@ -1,6 +1,6 @@
-# Frontend Mentor - Rock, Paper, Scissors
+# Frontend Mentor - Rock, Paper, scissorss
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Rock, Paper, scissorss coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -12,16 +12,16 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
+Your challenge is to build out this Rock, Paper, scissorss game and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
+- Play Rock, Paper, scissorss against the computer
 - Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- **Bonus**: Play Rock, Paper, scissorss, Lizard, Spock against the computer _(optional)_
 
 ### Rules
 
@@ -30,23 +30,23 @@ If the player wins, they gain 1 point. If the computer wins, the player loses on
 #### Original
 
 - Paper beats Rock
-- Rock beats Scissors
-- Scissors beats Paper
+- Rock beats scissorss
+- scissorss beats Paper
 
 #### Bonus
 
-- Scissors beats Paper
+- scissorss beats Paper
 - Paper beats Rock
 - Rock beats Lizard
 - Lizard beats Spock
-- Spock beats Scissors
-- Scissors beats Lizard
+- Spock beats scissorss
+- scissorss beats Lizard
 - Paper beats Spock
-- Rock beats Scissors
+- Rock beats scissorss
 - Lizard beats Paper
 - Spock beats Rock
 
-Not sure what Rock, Paper, Scissors, Lizard, Spock is? [Check out this clip from The Big Bang Theory](https://www.youtube.com/watch?v=iSHPVCBsnLw).
+Not sure what Rock, Paper, scissorss, Lizard, Spock is? [Check out this clip from The Big Bang Theory](https://www.youtube.com/watch?v=iSHPVCBsnLw).
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
@@ -54,7 +54,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 Your task is to build out the project to the designs inside the `/design` folder. You can either choose the `original` designs for the simpler version or the `bonus` designs for the harder version. You will find both mobile and desktop versions of the design to work to. Each file is also named depending on which step in the game the design is for.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
 If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
@@ -101,12 +101,12 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
 The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 

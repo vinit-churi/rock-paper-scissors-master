@@ -4,32 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <script src="./main.js" defer></script>
+    <title>Frontend Mentor | Rock, Paper, scissorss</title>
   </head>
   <body>
     <div class="navbar">
       <div class="title">
         <h3>Rock</h3>
         <h3>Paper</h3>
-        <h3>Scissor</h3>
+        <h3>scissors</h3>
       </div>
       <div class="score-board">
         <p class="board-title">SCORE</p>
-        <h2 id="player-score">12</h2>
+        <h2 id="player-score">0</h2>
       </div>
     </div>
     <div class="rps-container">
       <div class="black-triangle">
         <img src="./images/bg-triangle.svg" alt="" />
-        <div class="paper">
+        <div data-type="paper" class="paper">
           <img src="./images/icon-paper.svg" alt="paper" />
         </div>
-        <div class="scissor">
-          <img src="./images/icon-scissors.svg" alt="scissors" />
+        <div data-type="scissors" class="scissors">
+          <img src="./images/icon-scissors.svg" alt="scissorss" />
         </div>
-        <div class="rock">
+        <div data-type="rock" class="rock">
           <img src="./images/icon-rock.svg" alt="rock" />
         </div>
+      </div>
+    </div>
+    <div class="rps-result hide">
+      <div class="your-choice">
+        <img
+          id="your-choice-img"
+          src="./images/icon-rock.svg"
+          alt="your choice"
+        />
+      </div>
+      <div class="opponent-choice">
+        <img
+          id="opponent-choice-img"
+          src="./images/icon-rock.svg"
+          alt="your choice"
+        />
+      </div>
+      <div class="buttons">
+        <p class="result">You win</p>
+        <button class="play-again">play again</button>
+        <button class="reset">reset</button>
       </div>
     </div>
   </body>
