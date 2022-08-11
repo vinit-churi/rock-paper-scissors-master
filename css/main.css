@@ -204,6 +204,14 @@ div.navbar {
   position: relative;
 }
 
+.win {
+  border: 20px solid greenyellow !important;
+}
+
+.loose {
+  border: 20px solid red !important;
+}
+
 .rps-result .your-choice::before {
   position: absolute;
   content: "YOUR CHOICE";

@@ -9,6 +9,8 @@ const opponentChoiceImg = document.querySelector("#opponent-choice-img");
 const scissors = document.querySelector(".scissors");
 const playerScore = document.getElementById("player-score");
 const result = document.querySelector(".result");
+const yourChoice = document.querySelector(".your-choice");
+const opponentChoice = document.querySelector(".opponent-choice");
 // playerScore.innerText = 0;
 // select random from the house
 let score = 0;
@@ -44,10 +46,12 @@ function houseSelect(playerSelect) {
     score += 1;
     playerScore.innerText = String(score);
     result.innerText = "you Win";
+    yourChoice?.classList.add("win");
   } else if (options[x]["class"] === playerSelect) {
     result.innerText = "draw";
   } else {
     result.innerText = "you loose";
+    opponentChoice?.classList.add("win");
   }
 }
 console.log("is the js connected");
@@ -70,10 +74,18 @@ console.log("is the js connected");
 playAgain.addEventListener("click", (e) => {
   rpsContainer.classList.toggle("hide");
   rpsResult.classList.toggle("hide");
+  yourChoice?.classList.remove("win");
+  yourChoice?.classList.remove("loose");
+  opponentChoice?.classList.remove("win");
+  opponentChoice?.classList.remove("loose");
 });
 reset.addEventListener("click", (e) => {
   rpsContainer.classList.toggle("hide");
   rpsResult.classList.toggle("hide");
+  yourChoice?.classList.remove("win");
+  yourChoice?.classList.remove("loose");
+  opponentChoice?.classList.remove("win");
+  opponentChoice?.classList.remove("loose");
   playerScore.innerText = 0;
   score = 0;
 });
